@@ -13,6 +13,7 @@ add_library(
     ${PROJECT_NAME}
     SHARED
     urna.cpp
+    urna.def # definições, no caso de funções de acesso público
 )
 
 target_link_libraries(
