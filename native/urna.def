@@ -1,4 +1,4 @@
 LIBRARY urna
-PUBLIC
+EXPORTS
     playAudio
     olaMundo
