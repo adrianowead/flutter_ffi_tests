@@ -32,6 +32,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
+  final native = NativeFunctions();
 
   void _incrementCounter() {
     setState(() {
@@ -63,8 +64,6 @@ class _MyHomePageState extends State<MyHomePage> {
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           _incrementCounter();
-
-          final native = NativeFunctions();
 
           native.playSound("assets/som-urna/toque.wav");
         },
