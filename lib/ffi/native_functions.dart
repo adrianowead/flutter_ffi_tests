@@ -5,7 +5,7 @@ typedef CPlayAudio = ffi.Void Function(ffi.Pointer<ffip.Utf8> path);
 typedef DartPlayAudio = void Function(ffi.Pointer<ffip.Utf8> path);
 
 class NativeFunctions {
-  final urnaLib = ffi.DynamicLibrary.open("native\\build\\Debug\\urna.dll");
+  final urnaLib = ffi.DynamicLibrary.open("assets/dylibs/win32/urna.dll");
 
   void playSound(String path) {
     final playAudio =

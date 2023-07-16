@@ -15,7 +15,8 @@ void playAudio(const char* path) {
     PlaySoundA(
         path,
         NULL,
-        SND_FILENAME | SND_SYNC
+        SND_FILENAME | SND_ASYNC // neste caso é assincrono, mas toda a execução nativa trava a thread principal
+        // é importante então considerar abrir uma nova thread para as execuções nativas
     );
 }
 

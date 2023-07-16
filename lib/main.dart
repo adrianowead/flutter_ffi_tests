@@ -61,13 +61,12 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        // onPressed: _incrementCounter,
         onPressed: () {
+          _incrementCounter();
+
           final native = NativeFunctions();
 
           native.playSound("assets/som-urna/toque.wav");
-          native.playSound("assets/som-urna/toque.wav");
-          native.playSound("assets/som-urna/final.wav");
         },
         tooltip: 'Increment',
         child: const Icon(Icons.add),

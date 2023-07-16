@@ -13,3 +13,9 @@ Ou use o comando abaixo para compilar pelo **cmake** via cli.
 ```bash
 cmake --build ./build/
 ```
+
+Para gerar em release (produção)
+
+```bash
+cmake --build ./build/ --config Release
+```
