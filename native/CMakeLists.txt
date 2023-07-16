@@ -1,7 +1,12 @@
 cmake_minimum_required(VERSION 3.26.4)
-project(exemplo)
+project(urna)
 
 add_executable(
     ${PROJECT_NAME}
-    exemplo.cpp
+    urna.cpp
+)
+
+target_link_libraries(
+    ${PROJECT_NAME}
+    Winmm.lib
 )
